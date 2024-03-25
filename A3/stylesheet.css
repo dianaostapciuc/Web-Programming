@@ -1,0 +1,243 @@
+body {
+    font-family: 'harvard-font', serif;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: 625px;
+    position: absolute;
+}
+
+@font-face {
+    font-family: 'harvard-font';
+    src: url('fonts/CanelaText-Regular-Trial.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'harvard-font2';
+    src: url('fonts2/GT-America/GT-America-Standard-Regular-Trial.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'harvard-font3';
+    src: url('fonts2/GT-America/GT-America-Expanded-Medium-Trial.otf') format('opentype');
+}
+
+.overlay-image {
+    width: 100%;
+    height: 625px;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text-left-corner {
+    position: absolute;
+    top: 30px; 
+    left: 80px; 
+    color: white; 
+    font-size: 28px; 
+}
+
+.text-left-corner-2 {
+    position: absolute;
+    top: 65px; 
+    left: 98px; 
+    color: white; 
+    font-size: 15px; 
+}
+
+.image-left-corner {
+    position: absolute;
+    width: 43px;
+    height: 48px;
+    top: 40px; 
+    left: 30px; 
+}
+
+.text-main-left{
+    position: absolute;
+    left: 120px;
+    color: white;
+    font-size: 75px;
+    opacity: 0;
+    animation: popIn 2s forwards;
+}
+@keyframes popIn {
+    from{
+        top: 200px;
+        opacity: 0;
+    }
+    to{
+        top: 180px;
+        opacity: 1;
+    }
+}
+
+.text-main-right{
+    position: absolute;
+    left: 825px;
+    width: 600px;
+    color: white;
+    font-size: 35px;
+    line-height: 1.2;
+    opacity: 0;
+    animation: popIn2 1s forwards;
+    animation-delay: 1s;
+}
+@keyframes popIn2 {
+    from{
+        top: 320px;
+        opacity: 0;
+    }
+    to{
+        top: 300px;
+        opacity: 1;
+    }
+}
+
+.line-container {
+    position: relative;
+    width: 2px;
+    height: 625px; 
+}
+
+
+.line {
+    position: absolute;
+    width: 1px;
+    left: 760px; 
+    height: 0;
+    background-color: white;
+    animation: dropLine 2s ease forwards;
+}
+
+
+@keyframes dropLine {
+    from {
+        height: 0; 
+    }
+    to {
+        height: 625px;
+    }
+}
+
+.top-right-rectangle{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 330px;
+    height: 90px;
+    background-color: rgb(17, 17, 17);
+}
+
+.top-right-line{
+    position: absolute;
+    top: 0px;
+    right: 160px;
+    width: 1px;
+    height: 90px;
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+
+.top-right-square{
+    position: absolute;
+    top: 35px;
+    right: 120px;
+    width: 15px;
+    height: 19px;
+    border: 1px solid white;
+    background-color: rgb(17, 17, 17);
+}
+
+.top-right-square2{
+    position: absolute;
+    top: 35px;
+    right: 280px;
+    width: 15px;
+    height: 19px;
+    border: 1px solid white;
+    background-color: rgb(17, 17, 17);
+}
+
+.top-right-text{
+    position: absolute;
+    top: 35px;
+    right: 200px;
+    color: white;
+    font-family: 'harvard-font2', sans-serif;
+    font-size: 20px;
+}
+
+.top-right-text2{
+    position: absolute;
+    top: 35px;
+    right: 50px;
+    color: white;
+    font-family: 'harvard-font2', sans-serif;
+    font-size: 20px;
+}
+
+.bottom-text{
+    position: absolute;
+    bottom: 20px;
+    left: 120px;
+    font-family: 'harvard-font3', sans-serif;
+    font-size: 13px;
+}
+
+.bottom-text2{
+    position: absolute;
+    bottom: 18px;
+    left: 320px;
+    font-family: 'harvard-font2', sans-serif;
+    font-size: 15px;
+}
+
+.bottom-text3{
+    position: absolute;
+    bottom: 18px;
+    left: 480px;
+    font-family: 'harvard-font2', sans-serif;
+    font-size: 15px;
+}
+
+.bottom-text4{
+    position: absolute;
+    bottom: 18px;
+    left: 690px;
+    font-family: 'harvard-font2', sans-serif;
+    font-size: 15px;
+}
+
+.bottom-text5{
+    position: absolute;
+    bottom: 18px;
+    left: 875px;
+    font-family: 'harvard-font2', sans-serif;
+    font-size: 15px;
+}
+
+.bottom-text6{
+    position: absolute;
+    bottom: 18px;
+    left: 1100px;
+    font-family: 'harvard-font2', sans-serif;
+    font-size: 15px;
+}
+
+.diagonal-line {
+    position: absolute;
+    bottom: 20px;
+    left: 295px;
+    width: 2px; 
+    height: 15px; 
+    background-color: rgb(192, 188, 188);
+    transform: rotate(20deg);
+    transform-origin: bottom left ;
+}
+
+
