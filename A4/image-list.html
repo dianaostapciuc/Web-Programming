@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Slideshow</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="slide-container">
+        <div class="slides">
+            <img src="1.png" class="active">
+            <img src="2.jpeg">
+            <img src="3.jpg">
+            <img src="4.jpeg">
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button id="playButton">Play!</button>
+        <input type="checkbox" id="replayCheckbox">
+        <label for="replayCheckbox">Replay</label>
+        <select id="timeSelect">
+            <option value="2000">2 seconds</option>
+            <option value="3000">3 seconds</option>
+            <option value="5000">5 seconds</option>
+            <option value="7000">7 seconds</option>
+        </select>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
