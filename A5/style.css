@@ -1,0 +1,15 @@
+.puzzle {
+  background-image:url(aa.jpg);
+  width:137.5px;
+  height:137.5px;
+}
+
+.empty{
+  background-image:url(white.jpg);
+  width:137.5px;
+  height:137.5px;
+}
+
+table {
+  margin: 0 auto; 
+}
