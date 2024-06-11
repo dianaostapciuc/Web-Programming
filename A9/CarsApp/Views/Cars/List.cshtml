@@ -1,0 +1,60 @@
+﻿@model List<CarsApp.Web.Models.Entities.Car>
+@using Azure.Core
+@using Microsoft.AspNetCore.Mvc.Rendering;
+
+<h1>Cars</h1>
+<br />
+
+<a class="btn btn-primary" asp-controller="Cars" asp-action="Add">Add</a>
+
+<br />
+<br />
+
+
+<form method="get" asp-controller="Cars" asp-action="List">
+    <div class="form-group">
+        <label for="modelFilter">Filter by Model:</label>
+        <select id="modelFilter" name="selectedModel" class="form-control" onchange="this.form.submit()">
+            <option value="">None</option>
+            @foreach (var carModel in ViewBag.Models)
+            {
+                <option value="@carModel" selected="@(carModel == ViewBag.SelectedModel)"> @carModel </option>
+            }
+        </select>
+    </div>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Model</th>
+            <th>Engine Power</th>
+            <th>Fuel</th>
+            <th>Price</th>
+            <th>Color</th>
+            <th>Age</th>
+            <th>History</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var car in Model)
+        {
+            <tr>
+                <td>@car.Id</td>
+                <td>@car.Model</td>
+                <td>@car.EnginePower</td>
+                <td>@car.Fuel</td>
+                <td>@car.Price</td>
+                <td>@car.Color</td>
+                <td>@car.Age</td>
+                <td>@car.History</td>
+                <td>
+                    <a class="btn btn-primary" asp-controller="Cars" asp-action="Edit" asp-route-id="@car.Id">Edit</a>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
